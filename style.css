@@ -378,8 +378,25 @@ span {
     gap: 15px;
   }
 
+  .about-container {
+    grid-template-columns: 1fr; /* text upar, images niche */
+  }
+
   .about-images {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr; /* 2 column */
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .about-images div {
+    height: 120px;
+  }
+
+  .about-images div:nth-child(1) {
+    grid-column: span 2;
+    grid-row: span 1;
+    height: 180px;
   }
 
   .service-grid {
